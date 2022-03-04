@@ -9,6 +9,6 @@
 - Использование сторонних решений приветствуется при необходимости, в этом случае нужно обоснование каждого из них (почему используется именно это решение)
 - Цель приложения: минимальным количеством кода и сложности добиться качественной реализации поставленной задачи
 ## Использованные библиотеки:
-Для верстки - SnapKit(https://github.com/SnapKit/SnapKit)
-Для работы с сетью - Alamofire(https://github.com/Alamofire/Alamofire)
-Для кэширования изображений - SDWebImage(https://github.com/SDWebImage/SDWebImage)
+- Для верстки - [SnapKit](https://github.com/SnapKit/SnapKit)
+- Для работы с сетью - [Alamofire](https://github.com/Alamofire/Alamofire)
+- Для кэширования изображений - [SDWebImage](https://github.com/SDWebImage/SDWebImage)
