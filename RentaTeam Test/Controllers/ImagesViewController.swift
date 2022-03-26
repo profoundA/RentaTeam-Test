@@ -33,7 +33,6 @@ class ImagesViewController: UIViewController {
     
     private var collectionView: UICollectionView?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         Networking.shared.fetchPhotos(page: pageNumber) { result in
@@ -100,7 +99,6 @@ extension ImagesViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let photo = photos[indexPath.row]
-        
         
         cell.photoImageView.sd_setImage(with: URL(string: photo.largeImageURL), completed: nil)
         cell.nameLabel.text = "Фотограф: @\(photo.user)"
