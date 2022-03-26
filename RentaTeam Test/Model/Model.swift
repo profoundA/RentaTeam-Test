@@ -14,7 +14,7 @@ struct Welcome: Codable {
 }
 
 // MARK: - Hit
-struct Hit: Codable{
+struct Hit: Codable {
     let id: Int
     let pageURL: String
     let type: TypeEnum

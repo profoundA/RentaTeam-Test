@@ -16,8 +16,12 @@ class Networking {
         let url = "https://pixabay.com/api/?key=25814967-30a2e5594a0dea06dd8f8ef9c&image_type=photo&q=dogs&page=\(page)"
         
         AF.request(url).responseDecodable(of: Welcome.self) { response in
-            guard let result = response.value else { return }
-            completition(result.hits)
+            switch response.result {
+            case .success(let result):
+                completition(result.hits)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
         }
     }
 }
